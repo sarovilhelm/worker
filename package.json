@@ -1,0 +1,14 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "only_worker": "node w_index.js",
+    "both": ""
+  },
+  "keywords": [],
+  "author": "Saro <vilhelmsaro@gmail.com>",
+  "license": "MIT"
+}
