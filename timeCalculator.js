@@ -5,7 +5,6 @@ const calculateMiddleWorkTime = (func, args = null) => {
         const before = Date.now();
         const res = func(args);
         const after = Date.now();
-        console.log('')
         const eachFuncSeconds = (after - before) / 1000;
         sumOfSeconds += eachFuncSeconds;
     }
