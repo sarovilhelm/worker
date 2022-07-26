@@ -1,11 +1,11 @@
-const calculateMiddleWorkTime = (func, args = null, isArrayArgument = false) => {
+const calculateMiddleWorkTime = async (func, args = null) => {
+    if (!(args instanceof Array && args.length)) throw new Error('bad "args" in function calculateMiddleWorkTime');
 
     let sumOfSeconds = 0;
-    for (let i = 0; i < 10; i++) {
+    const dummyArr = new Array(10).fill(1,0,10);
+    for await (let i of dummyArr) {
         const before = Date.now();
-        let res;
-        if (isArrayArgument) res = func(...args);
-        else res = func(args);
+        const res = await func(...args);
         const after = Date.now();
         const eachFuncSeconds = (after - before) / 1000;
         sumOfSeconds += eachFuncSeconds;

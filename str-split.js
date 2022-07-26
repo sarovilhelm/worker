@@ -4,7 +4,6 @@ const strSplit = (n = 10) => {
     for (let i = 1; i <= n; i++) {
         const arr = bigStr.split('');
     }
-    console.log('the END of strSplit');
 }
 
 module.exports = strSplit;
